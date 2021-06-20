@@ -69,7 +69,9 @@ def n_palavras_diferentes(lista_palavras):
 
     return len(freq)
 
-##traços linguísticos EU IMPLEMENTEI ~ ~~~~~~~~=------------------
+'''
+Funções implementadas.
+'''
 
 def separa_palavras_texto(texto):
     '''Essa função recebe um texto e devolve uma lista das palavras utilizadas no total'''
@@ -151,8 +153,6 @@ def tamanho_médio_frase(texto): #será q quer q considere os espaços?
 
     return caracteres / len(lista_frases)
 
-
-##funções q comandam -----------------------------
 
 def calcula_assinatura(texto):
     '''IMPLEMENTAR. Essa funcao recebe um texto e devolve a assinatura do texto.'''
