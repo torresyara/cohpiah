@@ -137,7 +137,7 @@ def média_frases_por_sentenças(texto):
 
     return numero_frases / numero_sentencas
 
-def tamanho_médio_frase(texto): #será q quer q considere os espaços?
+def tamanho_médio_frase(texto): 
     '''Recebe um texto e devolve a soma do número de caracteres em cada frase dividido pelo número de frases do texto'''
 
     lista_sentencas = separa_sentencas(texto)
@@ -155,8 +155,7 @@ def tamanho_médio_frase(texto): #será q quer q considere os espaços?
 
 
 def calcula_assinatura(texto):
-    '''IMPLEMENTAR. Essa funcao recebe um texto e devolve a assinatura do texto.'''
-##calcular a assinatura de um texto, então outra função tem que chamar essa função, pra ela ler todos os textos. 
+    '''Essa funcao recebe um texto e devolve a assinatura do texto.'''
     wal_calculado = tamanho_médio_palavras(texto)
     ttr_calculado = type_token(texto)
     hlr_calculado = hapax(texto)
@@ -168,7 +167,7 @@ def calcula_assinatura(texto):
 
 
 def compara_assinatura(as_a, as_b):
-    '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
+    '''Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
     wal_diferença = abs(as_b[0] - as_a[0])
     ttr_diferença = abs(as_b[1] - as_a[1])
     hlr_diferença = abs(as_b[2] - as_a[2])
@@ -182,7 +181,7 @@ def compara_assinatura(as_a, as_b):
 
 
 def avalia_textos(textos, ass_cp):
-    '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
+    '''Essa funcao recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
     lista_assinaturas = list()
     lista_graus_similaridade = list()
 
